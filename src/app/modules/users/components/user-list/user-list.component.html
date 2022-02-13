@@ -86,6 +86,7 @@
       <mat-paginator
         [length]="100"
         [pageSize]="5"
+        [pageIndex]="currentPage - 1"
         aria-label="Select page"
         (page)="pageEvent = pageNavigations($event)"
       >
